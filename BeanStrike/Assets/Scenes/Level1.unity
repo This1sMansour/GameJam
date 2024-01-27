@@ -3152,6 +3152,70 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5304750225314411387, guid: aedfeda396107524abb5b5e6d770b8f2, type: 3}
+      propertyPath: m_Name
+      value: CallanRadio
+      objectReference: {fileID: 0}
+    - target: {fileID: 5304750225314411391, guid: aedfeda396107524abb5b5e6d770b8f2, type: 3}
+      propertyPath: stationClips.Array.size
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5304750225314411391, guid: aedfeda396107524abb5b5e6d770b8f2, type: 3}
+      propertyPath: stationClips.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: c983fd2974d9de640b2ba62f57f6ac07, type: 3}
+    - target: {fileID: 5304750225314411391, guid: aedfeda396107524abb5b5e6d770b8f2, type: 3}
+      propertyPath: stationClips.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 49a15104fb6254d44ad1203411e08291, type: 3}
+    - target: {fileID: 5304750225314411391, guid: aedfeda396107524abb5b5e6d770b8f2, type: 3}
+      propertyPath: stationClips.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 82c9d0efea7840e4fbb392d596274e35, type: 3}
+    - target: {fileID: 5304750225314411391, guid: aedfeda396107524abb5b5e6d770b8f2, type: 3}
+      propertyPath: stationClips.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: 2f692cf62597fd145a3bb36d674b520e, type: 3}
+    - target: {fileID: 5304750225314411391, guid: aedfeda396107524abb5b5e6d770b8f2, type: 3}
+      propertyPath: stationClips.Array.data[4]
+      value: 
+      objectReference: {fileID: 8300000, guid: 35dd6ec2c3fb8114895a6f4f6808b2e5, type: 3}
+    - target: {fileID: 5304750225314411391, guid: aedfeda396107524abb5b5e6d770b8f2, type: 3}
+      propertyPath: stationClips.Array.data[5]
+      value: 
+      objectReference: {fileID: 8300000, guid: 93de960235b463f448c3f69126812338, type: 3}
+    - target: {fileID: 5304750225314411391, guid: aedfeda396107524abb5b5e6d770b8f2, type: 3}
+      propertyPath: stationClips.Array.data[6]
+      value: 
+      objectReference: {fileID: 8300000, guid: 6e533421672f04e4e9dc47146e7ab890, type: 3}
+    - target: {fileID: 5304750225314411391, guid: aedfeda396107524abb5b5e6d770b8f2, type: 3}
+      propertyPath: stationClips.Array.data[7]
+      value: 
+      objectReference: {fileID: 8300000, guid: b7048a01e802d2f49ab844d5045103a7, type: 3}
+    - target: {fileID: 5304750225314411391, guid: aedfeda396107524abb5b5e6d770b8f2, type: 3}
+      propertyPath: stationClips.Array.data[8]
+      value: 
+      objectReference: {fileID: 8300000, guid: 629fad5425fa50b4db3da34380af359f, type: 3}
+    - target: {fileID: 5304750225314411391, guid: aedfeda396107524abb5b5e6d770b8f2, type: 3}
+      propertyPath: stationClips.Array.data[9]
+      value: 
+      objectReference: {fileID: 8300000, guid: 46579895749b70d4ea416e7a38d589af, type: 3}
+    - target: {fileID: 5304750225314411391, guid: aedfeda396107524abb5b5e6d770b8f2, type: 3}
+      propertyPath: stationClips.Array.data[10]
+      value: 
+      objectReference: {fileID: 8300000, guid: cd83547811012b041a28fecd7f35c120, type: 3}
+    - target: {fileID: 5304750225314411391, guid: aedfeda396107524abb5b5e6d770b8f2, type: 3}
+      propertyPath: stationClips.Array.data[11]
+      value: 
+      objectReference: {fileID: 8300000, guid: 62e6722230518cc43a8331f48101aa8e, type: 3}
+    - target: {fileID: 5304750225314411391, guid: aedfeda396107524abb5b5e6d770b8f2, type: 3}
+      propertyPath: stationClips.Array.data[12]
+      value: 
+      objectReference: {fileID: 8300000, guid: 62e6722230518cc43a8331f48101aa8e, type: 3}
+    - target: {fileID: 5304750225314411391, guid: aedfeda396107524abb5b5e6d770b8f2, type: 3}
+      propertyPath: stationClips.Array.data[13]
+      value: 
+      objectReference: {fileID: 8300000, guid: e60b0d1b96ad0134c8133e9e49f3c288, type: 3}
     - target: {fileID: 5304750225542253508, guid: aedfeda396107524abb5b5e6d770b8f2, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 144.2
@@ -3164,6 +3228,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7017570412492325065, guid: aedfeda396107524abb5b5e6d770b8f2, type: 3}
+      propertyPath: m_Name
+      value: ChatterRadio
+      objectReference: {fileID: 0}
     - target: {fileID: 7017570412492325066, guid: aedfeda396107524abb5b5e6d770b8f2, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -3180,6 +3248,46 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7017570412492325069, guid: aedfeda396107524abb5b5e6d770b8f2, type: 3}
+      propertyPath: stationClips.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017570412492325069, guid: aedfeda396107524abb5b5e6d770b8f2, type: 3}
+      propertyPath: stationClips.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 3b56658136c539547a3c06ae63f471f7, type: 3}
+    - target: {fileID: 7017570412492325069, guid: aedfeda396107524abb5b5e6d770b8f2, type: 3}
+      propertyPath: stationClips.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 4e09514dd6d042d40a03a85ad93e82e8, type: 3}
+    - target: {fileID: 7017570412492325069, guid: aedfeda396107524abb5b5e6d770b8f2, type: 3}
+      propertyPath: stationClips.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 7948841672c56f54a8c7d72a3cb9fa41, type: 3}
+    - target: {fileID: 7017570412492325069, guid: aedfeda396107524abb5b5e6d770b8f2, type: 3}
+      propertyPath: stationClips.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: 262d05e782099034cabe2d56ec9e5450, type: 3}
+    - target: {fileID: 7017570412492325069, guid: aedfeda396107524abb5b5e6d770b8f2, type: 3}
+      propertyPath: stationClips.Array.data[4]
+      value: 
+      objectReference: {fileID: 8300000, guid: 1fc83bfc25ab82d4dbf1cefa822d1e28, type: 3}
+    - target: {fileID: 7017570412492325069, guid: aedfeda396107524abb5b5e6d770b8f2, type: 3}
+      propertyPath: stationClips.Array.data[5]
+      value: 
+      objectReference: {fileID: 8300000, guid: cf5f370511819774596e58707e7b52ed, type: 3}
+    - target: {fileID: 7017570412492325069, guid: aedfeda396107524abb5b5e6d770b8f2, type: 3}
+      propertyPath: stationClips.Array.data[6]
+      value: 
+      objectReference: {fileID: 8300000, guid: 1ced2e13f3f45d34aa2454ee5c64277a, type: 3}
+    - target: {fileID: 7017570412492325069, guid: aedfeda396107524abb5b5e6d770b8f2, type: 3}
+      propertyPath: stationClips.Array.data[7]
+      value: 
+      objectReference: {fileID: 8300000, guid: cdcf83d871f6ae74696937e83399c16f, type: 3}
+    - target: {fileID: 7017570414373306297, guid: aedfeda396107524abb5b5e6d770b8f2, type: 3}
+      propertyPath: m_Name
+      value: MyMusic
+      objectReference: {fileID: 0}
     - target: {fileID: 7017570414373306298, guid: aedfeda396107524abb5b5e6d770b8f2, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -3196,6 +3304,54 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7017570414373306301, guid: aedfeda396107524abb5b5e6d770b8f2, type: 3}
+      propertyPath: stationClips.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017570414373306301, guid: aedfeda396107524abb5b5e6d770b8f2, type: 3}
+      propertyPath: stationClips.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 4d7000a19076dd147802aa99e71eded8, type: 3}
+    - target: {fileID: 7017570414373306301, guid: aedfeda396107524abb5b5e6d770b8f2, type: 3}
+      propertyPath: stationClips.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 8f37d74b8dd6a2847a7efeddc7e88fef, type: 3}
+    - target: {fileID: 7017570414373306301, guid: aedfeda396107524abb5b5e6d770b8f2, type: 3}
+      propertyPath: stationClips.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 7485b025c9ca2074ca5148737f2b07c3, type: 3}
+    - target: {fileID: 7017570414373306301, guid: aedfeda396107524abb5b5e6d770b8f2, type: 3}
+      propertyPath: stationClips.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: 3182eacf42ca62c40be8e15d53d028c2, type: 3}
+    - target: {fileID: 7017570414373306301, guid: aedfeda396107524abb5b5e6d770b8f2, type: 3}
+      propertyPath: stationClips.Array.data[4]
+      value: 
+      objectReference: {fileID: 8300000, guid: bef830700f752d3408f338593a2f2d05, type: 3}
+    - target: {fileID: 7017570414373306301, guid: aedfeda396107524abb5b5e6d770b8f2, type: 3}
+      propertyPath: stationClips.Array.data[5]
+      value: 
+      objectReference: {fileID: 8300000, guid: 5899c2fff12aa0b4298822e2d87044b7, type: 3}
+    - target: {fileID: 7017570414373306301, guid: aedfeda396107524abb5b5e6d770b8f2, type: 3}
+      propertyPath: stationClips.Array.data[6]
+      value: 
+      objectReference: {fileID: 8300000, guid: 8bc12285b5b05e1438b50257bd7efbcb, type: 3}
+    - target: {fileID: 7017570414373306301, guid: aedfeda396107524abb5b5e6d770b8f2, type: 3}
+      propertyPath: stationClips.Array.data[7]
+      value: 
+      objectReference: {fileID: 8300000, guid: bfc16d00d688f5b4ba49070e697068cc, type: 3}
+    - target: {fileID: 7017570414373306301, guid: aedfeda396107524abb5b5e6d770b8f2, type: 3}
+      propertyPath: stationClips.Array.data[8]
+      value: 
+      objectReference: {fileID: 8300000, guid: baf244ec08d93ba4fad229db2ea6e33b, type: 3}
+    - target: {fileID: 7017570414373306301, guid: aedfeda396107524abb5b5e6d770b8f2, type: 3}
+      propertyPath: stationClips.Array.data[9]
+      value: 
+      objectReference: {fileID: 8300000, guid: 11f3b24f9b4a04f42b9147f8ad884f24, type: 3}
+    - target: {fileID: 7017570414373306301, guid: aedfeda396107524abb5b5e6d770b8f2, type: 3}
+      propertyPath: stationClips.Array.data[10]
+      value: 
+      objectReference: {fileID: 8300000, guid: 11f3b24f9b4a04f42b9147f8ad884f24, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aedfeda396107524abb5b5e6d770b8f2, type: 3}
 --- !u!1 &1271830213
