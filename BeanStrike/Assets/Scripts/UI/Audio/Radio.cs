@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.UI;
+
 
 public class Radio : MonoBehaviour
 {
@@ -12,16 +14,31 @@ public class Radio : MonoBehaviour
 
     public float waitBeforeOff = 15;
 
+    public Image Radio_On;
+    public Image Radio_Off;
+    private bool OnOff;
+
+    private float volume;
+
+
     // Start is called before the first frame update
     void Start()
     {
+        OnOff = true;
+        Radio_Off.gameObject.SetActive(false);
+        Radio_On.gameObject.SetActive(true);
+
         PlayRadio();
     }
 
+    
+
     public void AdjustRadioVolume(float value)
     {
-        audioMixer.SetFloat("Volume", value);
+        volume = value;
+        if (OnOff) { audioMixer.SetFloat("Volume", value); }
     }
+
     public void PlayRadio()
     {
         for (int i = 0; i < radioStations.Count; i++)
@@ -63,4 +80,22 @@ public class Radio : MonoBehaviour
         }
         PlayRadio();
     }  
+
+    public void OnClick()
+    {
+        OnOff = false;
+        Radio_Off.gameObject.SetActive(true);
+        Radio_On.gameObject.SetActive(false);
+
+        audioMixer.SetFloat("Volume", -80f);
+    }
+
+    public void OffClick()
+    {
+        OnOff = true;
+        Radio_Off.gameObject.SetActive(false);
+        Radio_On.gameObject.SetActive(true);
+
+        audioMixer.SetFloat("Volume", volume);
+    }
 }
