@@ -272,7 +272,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 809426158}
-  scoreText: {fileID: 0}
+  scoreText: {fileID: 269153899}
 --- !u!1 &331978755 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3105571632697814761, guid: 2da4710bf0a286c44b17dee2380ec7ef, type: 3}
