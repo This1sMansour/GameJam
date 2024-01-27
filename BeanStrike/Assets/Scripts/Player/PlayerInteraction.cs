@@ -48,7 +48,7 @@ public class PlayerInteraction : MonoBehaviour
     {
         foreach (Collider2D bean in beans)
         {
-            bean.gameObject.GetComponent<Bean_AI>().disableOnWaypoint = false;
+            bean.gameObject.GetComponent<Bean_AI>().stopAtWaypoint = false;
             bean.gameObject.GetComponent<Bean_AI>().ResetReachRadius();
             bean.gameObject.GetComponent<Bean_AI>().GetNextTarget();
         }
@@ -58,7 +58,7 @@ public class PlayerInteraction : MonoBehaviour
     {
         foreach (Collider2D bean in beans)
         {
-            bean.gameObject.GetComponent<Bean_AI>().disableOnWaypoint = true;
+            bean.gameObject.GetComponent<Bean_AI>().stopAtWaypoint = true;
             bean.gameObject.GetComponent<Bean_AI>().reachRadius = 0.5f;
             bean.gameObject.GetComponent<Bean_AI>().target = mainTarget;
         }
