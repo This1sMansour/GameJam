@@ -45,3 +45,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Table
+    uniqueID: 1106988393
+    locked: 0
+  - name: Assets
+    uniqueID: 3491293061
+    locked: 0
