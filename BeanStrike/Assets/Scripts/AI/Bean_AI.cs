@@ -6,16 +6,19 @@ public class Bean_AI : MonoBehaviour
 {
     [SerializeField] List<Transform> waypoints;
     [SerializeField] float waypointSize = 0.1f;
-    [SerializeField] float reachRadius = 0.2f;
+    public float reachRadius = 0.2f;
+    public  int beanTypeID = 1;
     public List<Transform> targetWaypoints;
     public Transform target;
     public float moveSpeed = 2f;
     public bool disableOnWaypoint = false;
+    float reachRadiusOld;
 
     // Start is called before the first frame update
     void Start()
     {
-        target = GetNextTarget();
+        reachRadiusOld = reachRadius;
+        GetNextTarget();
     }
 
     // Update is called once per frame
@@ -33,7 +36,7 @@ public class Bean_AI : MonoBehaviour
         // Get next waypoint if reached waypoint
         if (Vector3.Distance(transform.position, target.position) <= reachRadius)
         {
-            target = GetNextTarget();
+            GetNextTarget();
         }
     }
 
@@ -73,14 +76,21 @@ public class Bean_AI : MonoBehaviour
         return Physics2D.OverlapCircle(new Vector2(waypointPositon.x, waypointPositon.y), waypointSize);
     }
 
-    Transform GetNextTarget()
+    public void GetNextTarget()
     {
         if (targetWaypoints.Count > 0)
         {
             int waypointIndex = Random.Range(0, (targetWaypoints.Count - 1));
-            return targetWaypoints[waypointIndex];
+            target = targetWaypoints[waypointIndex];
+            return;
         }
-        return transform;
+        target = transform;
+        return;
+    }
+
+    public void ResetReachRadius()
+    {
+        reachRadius = reachRadiusOld;
     }
 
     void OnDrawGizmos()

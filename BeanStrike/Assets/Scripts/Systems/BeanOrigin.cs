@@ -44,6 +44,9 @@ public class BeanOrigin : MonoBehaviour
 
     void OnDrawGizmos()
     {
+        Gizmos.color = Color.red;
+        Gizmos.DrawSphere(transform.position, 0.1f);
+
         if (waypoints.Count > 0)
         {
             foreach (Transform waypoint in waypoints)
