@@ -11,8 +11,9 @@ public class Bean_AI : MonoBehaviour
     public List<Transform> targetWaypoints;
     public Transform target;
     public float moveSpeed = 2f;
-    public bool disableOnWaypoint = false;
+    public bool stopAtWaypoint = false;
     float reachRadiusOld;
+    public int points = 1;
 
     // Start is called before the first frame update
     void Start()
@@ -27,14 +28,8 @@ public class Bean_AI : MonoBehaviour
         // Apply move
         transform.position = Vector3.MoveTowards(transform.position, LookForPathPoint(), moveSpeed * Time.deltaTime);
 
-        // Destroy gameobject if reached waypoint
-        if (Vector3.Distance(transform.position, target.position) <= reachRadius && disableOnWaypoint)
-        {
-            Destroy(gameObject);
-        }
-
         // Get next waypoint if reached waypoint
-        if (Vector3.Distance(transform.position, target.position) <= reachRadius)
+        if (Vector3.Distance(transform.position, target.position) <= reachRadius && !stopAtWaypoint)
         {
             GetNextTarget();
         }
