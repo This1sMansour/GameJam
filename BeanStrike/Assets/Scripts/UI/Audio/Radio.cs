@@ -38,6 +38,7 @@ public class Radio : MonoBehaviour
         radioStations[currentStation].currentRadio = true;
     }
 
+
     public void NavigateStations(bool value)
     {
         // Navigate forwards
