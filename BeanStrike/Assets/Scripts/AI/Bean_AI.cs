@@ -6,39 +6,35 @@ public class Bean_AI : MonoBehaviour
 {
     [SerializeField] List<Transform> waypoints;
     [SerializeField] float waypointSize = 0.1f;
+    [SerializeField] float reachRadius = 0.2f;
+    public List<Transform> targetWaypoints;
     public Transform target;
     public float moveSpeed = 2f;
+    public bool disableOnWaypoint = false;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        target = GetNextTarget();
     }
 
     // Update is called once per frame
     void Update()
     {
-        // Assign the first unobscurred sensor to the current point variable
-        /*for (int i = 0; i < sensors.Count; i++)
-        {
-            if (CheckForObstacles(sensors[i].position) == null)
-            {
-                currentPoint = sensors[0];
-            }
-        }
-
-        // Go through the rest of the sensors
-        for (int i = 1; i < sensors.Count; i++)
-        {
-            // If the current point is farther away than the sensors[i] point, replace it
-            if (Vector3.Distance(sensors[i].position, waypoint.position) < Vector3.Distance(currentPoint.position, waypoint.position) && CheckForObstacles(sensors[i].position) == null)
-            {
-                currentPoint = sensors[i];
-            }
-        }*/
-
         // Apply move
         transform.position = Vector3.MoveTowards(transform.position, LookForPathPoint(), moveSpeed * Time.deltaTime);
+
+        // Destroy gameobject if reached waypoint
+        if (Vector3.Distance(transform.position, target.position) <= reachRadius && disableOnWaypoint)
+        {
+            Destroy(gameObject);
+        }
+
+        // Get next waypoint if reached waypoint
+        if (Vector3.Distance(transform.position, target.position) <= reachRadius)
+        {
+            target = GetNextTarget();
+        }
     }
 
     Vector3 LookForPathPoint()
@@ -77,6 +73,16 @@ public class Bean_AI : MonoBehaviour
         return Physics2D.OverlapCircle(new Vector2(waypointPositon.x, waypointPositon.y), waypointSize);
     }
 
+    Transform GetNextTarget()
+    {
+        if (targetWaypoints.Count > 0)
+        {
+            int waypointIndex = Random.Range(0, (targetWaypoints.Count - 1));
+            return targetWaypoints[waypointIndex];
+        }
+        return transform;
+    }
+
     void OnDrawGizmos()
     {
         if (waypoints.Count > 0)
@@ -87,5 +93,7 @@ public class Bean_AI : MonoBehaviour
                 Gizmos.DrawSphere(waypoint.position, waypointSize);
             }
         }
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, reachRadius);
     }
 }
