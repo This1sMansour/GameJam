@@ -136,9 +136,10 @@ GameObject:
   - component: {fileID: 5451897559154079200}
   - component: {fileID: 5451897559154079230}
   - component: {fileID: 8373205375602051674}
+  - component: {fileID: 9166733156706695726}
   m_Layer: 3
   m_Name: MrBean
-  m_TagString: Untagged
+  m_TagString: bean
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -245,7 +246,8 @@ MonoBehaviour:
   targetWaypoints: []
   target: {fileID: 0}
   moveSpeed: 2
-  disableOnWaypoint: 0
+  stopAtWaypoint: 0
+  points: 1
 --- !u!70 &8373205375602051674
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -262,6 +264,27 @@ CapsuleCollider2D:
   m_Offset: {x: -0.08440167, y: -0.026223063}
   m_Size: {x: 2.7767777, y: 5.9874153}
   m_Direction: 0
+--- !u!50 &9166733156706695726
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5451897559154079201}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &5451897559296434218
 GameObject:
   m_ObjectHideFlags: 0
