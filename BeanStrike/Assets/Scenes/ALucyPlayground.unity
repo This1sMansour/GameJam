@@ -316,7 +316,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerText: {fileID: 1012316144}
-  remainingTime: 4
+  remainingTime: 90
 --- !u!4 &809426158 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3105571632697814775, guid: 2da4710bf0a286c44b17dee2380ec7ef, type: 3}
@@ -400,7 +400,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
+  m_VerticalAlignment: 1024
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -457,9 +457,9 @@ RectTransform:
   m_Father: {fileID: 1186150181}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 87.27893, y: 53.78061}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1167116567
@@ -557,10 +557,10 @@ RectTransform:
   m_Father: {fileID: 512372840}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 252.38776, y: 93.21939}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -125, y: -52}
+  m_SizeDelta: {x: 223.8942, y: 75.5977}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1186150182
 MonoBehaviour:
@@ -582,7 +582,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -1118335650, guid: c40248934b33057448ade6e53e056050, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
