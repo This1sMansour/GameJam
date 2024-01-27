@@ -2,12 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class PlayerController : MonoBehaviour
 {
     // Start is called before the first frame update
     [SerializeField] private float movementSpeed = 2f;
     private Rigidbody2D rb;
     private Vector2 movementDirection;
+
+    public float jumpHeight = 1.0f;
+    public float jumpSpeed = 2.0f;
+    private Vector2 initialPosition;
 
     private float previousMovement; // Start with character look right
 
@@ -16,6 +21,8 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         previousMovement = 1;
+
+        initialPosition = transform.position;
     }
 
     // Update is called once per frame
@@ -28,6 +35,8 @@ public class PlayerController : MonoBehaviour
             Rotate180Degrees();
             previousMovement = Input.GetAxis("Horizontal");
         }
+
+        rb.AddForce(new Vector2(0, jumpHeight), ForceMode2D.Impulse);
     }
 
     void FixedUpdate()
@@ -48,3 +57,5 @@ public class PlayerController : MonoBehaviour
     }
 
 }
+
+
