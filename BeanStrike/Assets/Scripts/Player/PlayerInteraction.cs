@@ -27,6 +27,10 @@ public class PlayerInteraction : MonoBehaviour
         {
             DirectBeans();
         }
+        if (Input.GetKeyDown("3"))
+        {
+            DiscardBeans();
+        }
     }
 
     void CallBeans(int beanID)
@@ -40,11 +44,22 @@ public class PlayerInteraction : MonoBehaviour
         }
     }
 
+    void DiscardBeans()
+    {
+        foreach (Collider2D bean in beans)
+        {
+            bean.gameObject.GetComponent<Bean_AI>().disableOnWaypoint = false;
+            bean.gameObject.GetComponent<Bean_AI>().ResetReachRadius();
+            bean.gameObject.GetComponent<Bean_AI>().GetNextTarget();
+        }
+    }
+
     void DirectBeans()
     {
         foreach (Collider2D bean in beans)
         {
             bean.gameObject.GetComponent<Bean_AI>().disableOnWaypoint = true;
+            bean.gameObject.GetComponent<Bean_AI>().reachRadius = 0.5f;
             bean.gameObject.GetComponent<Bean_AI>().target = mainTarget;
         }
     }
