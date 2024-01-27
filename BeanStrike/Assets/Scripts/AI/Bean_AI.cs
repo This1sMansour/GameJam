@@ -7,6 +7,7 @@ public class Bean_AI : MonoBehaviour
     [SerializeField] List<Transform> waypoints;
     [SerializeField] float waypointSize = 0.1f;
     [SerializeField] float reachRadius = 0.2f;
+    public  int beanTypeID = 1;
     public List<Transform> targetWaypoints;
     public Transform target;
     public float moveSpeed = 2f;
