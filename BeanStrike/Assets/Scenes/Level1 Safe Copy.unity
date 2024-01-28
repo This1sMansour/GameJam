@@ -1544,6 +1544,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: BeanOrigin With Waypoints
       objectReference: {fileID: 0}
+    - target: {fileID: 169348770459456527, guid: 5a56cc3e06b6dd944951272ae3f6c421, type: 3}
+      propertyPath: beanTypes.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 169348770459456527, guid: 5a56cc3e06b6dd944951272ae3f6c421, type: 3}
+      propertyPath: beanTypes.Array.data[1]
+      value: 
+      objectReference: {fileID: 5451897559154079201, guid: 75cc263073d334446a3ab4a56f59f14d, type: 3}
+    - target: {fileID: 169348770459456527, guid: 5a56cc3e06b6dd944951272ae3f6c421, type: 3}
+      propertyPath: beanTypes.Array.data[2]
+      value: 
+      objectReference: {fileID: 5451897559154079201, guid: eb29370399e68de40b5a0f17cfd70400, type: 3}
     - target: {fileID: 4490794474501541546, guid: 5a56cc3e06b6dd944951272ae3f6c421, type: 3}
       propertyPath: m_LocalPosition.x
       value: -16.01

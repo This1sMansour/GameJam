@@ -12,8 +12,8 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: a19a330ce5eb9cd44bded9be5e6f31ea
   - enabled: 1
-    path: Assets/Scenes/Level1.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/Level1 Safe Copy.unity
+    guid: f51d8b056000c8042919270ade34382a
   - enabled: 1
     path: Assets/Scenes/ALucyPlayground.unity
     guid: 5ae9085153e466b49bbcb4c77eaeb37a
