@@ -19,7 +19,7 @@ public class EndGame : MonoBehaviour
 
     public void RestartButton()
     {
-        SceneManager.LoadScene("Level1");
+        SceneManager.LoadScene("Level1 Safe Copy");
     }
 
     public void MainMenuButton()
