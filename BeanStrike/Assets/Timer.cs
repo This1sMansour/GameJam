@@ -9,6 +9,9 @@ public class Timer : MonoBehaviour
     [SerializeField] TextMeshProUGUI timerText;
     [SerializeField] float remainingTime;
 
+    public GameObject EndGameMenu;
+    public EndGame endGame;
+
     void Start() 
     {
         remainingTime = 180;
@@ -29,7 +32,8 @@ public class Timer : MonoBehaviour
             if(remainingTime < 0) 
             {
                 Debug.Log("End");
-                //GameOver();
+                EndGameMenu.SetActive(true);
+                endGame.SetUp();
                 remainingTime = 0;
             }
         }

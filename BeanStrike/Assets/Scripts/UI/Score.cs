@@ -8,7 +8,7 @@ public class Score : MonoBehaviour
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI highScoreText;
 
-    private int highScore;
+    public int highScore;
     public bool newHighScore;
 
     void Start()
