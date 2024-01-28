@@ -1498,7 +1498,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 169348770459456524, guid: 5a56cc3e06b6dd944951272ae3f6c421, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 169348770459456524, guid: 5a56cc3e06b6dd944951272ae3f6c421, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2674,7 +2674,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerText: {fileID: 895102304}
-  remainingTime: 0
+  remainingTime: 60
   EndGameMenu: {fileID: 1931154061}
   endGame: {fileID: 739920011}
 --- !u!114 &739920011
@@ -4659,6 +4659,11 @@ PrefabInstance:
       objectReference: {fileID: 356219767}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2da4710bf0a286c44b17dee2380ec7ef, type: 3}
+--- !u!1 &1469083187 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3105571632697814761, guid: 2da4710bf0a286c44b17dee2380ec7ef, type: 3}
+  m_PrefabInstance: {fileID: 1469083186}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1478524412
 GameObject:
   m_ObjectHideFlags: 0
@@ -5366,6 +5371,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3105571632697814775, guid: 2da4710bf0a286c44b17dee2380ec7ef, type: 3}
   m_PrefabInstance: {fileID: 1469083186}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1728745966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1469083187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4df4bbdd5fee34f4f8d94dde3667ff1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactionRange: 5
+  beans: []
+  targetLayer:
+    serializedVersion: 2
+    m_Bits: 8
+  mainTarget: {fileID: 356219767}
 --- !u!1 &1767048492
 GameObject:
   m_ObjectHideFlags: 0
@@ -6037,7 +6060,7 @@ PrefabInstance:
       objectReference: {fileID: 739920008}
     - target: {fileID: 2151020534803966243, guid: e52e603ff29bb564b8cd87a7f63c7062, type: 3}
       propertyPath: m_Radius
-      value: 0.41
+      value: 0.74
       objectReference: {fileID: 0}
     - target: {fileID: 2151020534803966244, guid: e52e603ff29bb564b8cd87a7f63c7062, type: 3}
       propertyPath: m_Name
@@ -6045,7 +6068,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2151020534803966245, guid: e52e603ff29bb564b8cd87a7f63c7062, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2151020534803966245, guid: e52e603ff29bb564b8cd87a7f63c7062, type: 3}
       propertyPath: m_LocalPosition.x

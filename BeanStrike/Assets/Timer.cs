@@ -7,14 +7,14 @@ using TMPro;
 public class Timer : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI timerText;
-    [SerializeField] float remainingTime;
+    [SerializeField] float remainingTime = 180;
 
     public GameObject EndGameMenu;
     public EndGame endGame;
 
     void Start() 
     {
-        remainingTime = 180;
+
     }
 
 
