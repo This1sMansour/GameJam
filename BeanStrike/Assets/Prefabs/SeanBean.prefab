@@ -138,7 +138,7 @@ GameObject:
   - component: {fileID: 8373205375602051674}
   - component: {fileID: 9166733156706695726}
   m_Layer: 3
-  m_Name: MrBean
+  m_Name: SeanBean
   m_TagString: bean
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -208,7 +208,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -694787267, guid: 5ea95dc2a16e45c40a28a8df0372e19d, type: 3}
+  m_Sprite: {fileID: 255737357, guid: a1914fa1ea93c2f45b567850db67b907, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
