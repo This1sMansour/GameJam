@@ -14,7 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level1 Safe Copy.unity
     guid: f51d8b056000c8042919270ade34382a
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/ALucyPlayground.unity
     guid: 5ae9085153e466b49bbcb4c77eaeb37a
   m_configObjects: {}
