@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Time.timeScale = 1f;
     }
 
     // Update is called once per frame
@@ -34,7 +34,7 @@ public class GameManager : MonoBehaviour
 
         // Freeze time
         gamePasused = !gamePasused;
-        Time.timeScale = gamePasused ? 0f : 1f; ;
+        Time.timeScale = gamePasused ? 0f : 1f;
     }
 
     public void ToMainMenu()
